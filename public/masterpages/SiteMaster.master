@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Master.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderId="HeadContent" runat="server">
+  <asp:ContentPlaceHolder Id="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderId="HeaderContent" runat="server">
+  <asp:ContentPlaceHolder Id="HeaderContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderId="MainContent" runat="server">
+  <asp:ContentPlaceHolder Id="MainContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderId="FooterContent" runat="server">
+  <asp:ContentPlaceHolder Id="FooterContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+  
+<asp:Content ContentPlaceHolderId="ScriptContent" runat="server">
+  <asp:ContentPlaceHolder Id="ScriptContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

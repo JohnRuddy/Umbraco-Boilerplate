@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title><umbraco:Macro Alias="PageTitle" runat="server"></umbraco:Macro></title>
+  <umbraco:Item field="metaDescription" insertTextBefore="&lt;meta name=&quot;description&quot; content=&quot;" insertTextAfter="&quot;&gt;" recursive="true" runat="server"></umbraco:Item>
+  <umbraco:Item field="metaAuthor" insertTextBefore="&lt;meta name=&quot;author&quot; content=&quot;" insertTextAfter="&quot;&gt;" recursive="true" runat="server"></umbraco:Item>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.less.css">
+  <!-- end CSS-->
+
+  <script src="/scripts/libs/modernizr-2.0.6.min.js"></script>
+
+  <asp:ContentPlaceHolder Id="HeadContent" runat="server">
+    <!-- Insert default "HeadContent" markup here -->
+  </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <asp:ContentPlaceHolder Id="HeaderContent" runat="server" />
+    </header>
+    
+    <div id="main" role="main">
+      <asp:ContentPlaceHolder Id="MainContent" runat="server" />
+    </div>
+    
+    <footer>
+      <asp:ContentPlaceHolder Id="FooterContent" runat="server" />
+    </footer>
+  </div> <!--! end of #container -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>      window.jQuery || document.write('<script src="/scripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="/scripts/plugins.js"></script>
+  <script defer src="/scripts/script.js"></script>
+  <asp:ContentPlaceHolder Id="ScriptContent" runat="server" />
+  <!-- end scripts-->
+
+  <umbraco:Macro Alias="GoogleAnalytics" runat="server"></umbraco:Macro>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
+
+</asp:Content>

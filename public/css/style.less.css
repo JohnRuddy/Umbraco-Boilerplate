@@ -1,0 +1,5 @@
+@col:#ddd;
+
+html { background-color:@col; }
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
