@@ -1,13 +1,16 @@
-Base structure for all our Umbraco projects.
+Umbraco Boilerplate
+-------------------
+
+Umbraco Boilerplate is a base project for all our Umbraco client projects, as well as the excellent HTML5 Boilerplate, it features a bunch of common requirements for our projects, this is open source, feel free to steal, improve, or borrow what you need.
 
 Includes:
 
-Visual Studio project structure (needs improvement, Umbraco and the custom code should probably be seperate - at the moment, we have to put all dll's in libs/ and reference them, makes installing new packages a pita)
-HTML5 Boilerplate (v2.0) structure.
-Core Umbraco 4.7 installation
-.Less integration
-Title bar setup
-Google Analytics setup
-Best practice SEO options for all pages
-Humans.txt specifically for TA (update if this is used for your own projects)
-Comes with backup SQL database in /data (in future, maybe checking in the SQL script would be more appropriate?)
+1. Visual Studio project structure (needs improvement, Umbraco and the custom code should probably be seperate - at the moment, we have to put all dll's in libs/ and reference them, makes installing new packages a pita)
+2. HTML5 Boilerplate (v2.0) structure.
+3. Core Umbraco 4.7 installation
+4. .Less integration
+5. Title bar setup
+6. Google Analytics setup
+7. Best practice SEO options for all pages
+8. Humans.txt specifically for TA (update if this is used for your own projects)
+9. Comes with backup SQL database in /data (in future, maybe checking in the SQL script would be more appropriate?)
