@@ -1,0 +1,11 @@
+Base structure for all our Umbraco projects.
+
+Includes:
+
+Visual Studio project structure (needs improvement, Umbraco and the custom code should probably be seperate - at the moment, we have to put all dll's in libs/ and reference them, makes installing new packages a pita)
+HTML5 Boilerplate (v2.0) structure.
+.Less integration
+Title bar setup
+Google Analytics setup
+Best practice SEO options for all pages
+Humans.txt specifically for TA (update if this is used for your own projects)
