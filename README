@@ -9,3 +9,4 @@ Title bar setup
 Google Analytics setup
 Best practice SEO options for all pages
 Humans.txt specifically for TA (update if this is used for your own projects)
+Comes with backup SQL database in /data (in future, maybe checking in the SQL script would be more appropriate?)
