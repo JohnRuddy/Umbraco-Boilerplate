@@ -4,6 +4,7 @@ Includes:
 
 Visual Studio project structure (needs improvement, Umbraco and the custom code should probably be seperate - at the moment, we have to put all dll's in libs/ and reference them, makes installing new packages a pita)
 HTML5 Boilerplate (v2.0) structure.
+Core Umbraco 4.7 installation
 .Less integration
 Title bar setup
 Google Analytics setup
